@@ -1,0 +1,20 @@
+[workspace]
+authors = ["Sai Varun Aduru <saivarunaduru@gmail.com>"]
+channels = ["conda-forge"]
+name = "pde_pinn_simulations"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+test = "python test_one_pinns.py"
+
+[dependencies]
+python = "3.11.*"
+numpy = ">=2.4.3,<3"
+scipy = ">=1.17.1,<2"
+matplotlib = ">=3.10.8,<4"
+pandas = ">=3.0.1,<4"
+seaborn = ">=0.13.2,<0.14"
+sundials = ">=7.6.0,<8"
+ipykernel = ">=7.2.0,<8"
+pytorch = ">=2.10.0,<3"
